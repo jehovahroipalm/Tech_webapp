@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TechCrush - Your Tech Hub</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+        }
+
+        header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 2rem 0;
+            text-align: center;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+
+        header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 0.5rem;
+        }
+
+        header p {
+            font-size: 1.1rem;
+            opacity: 0.9;
+        }
+
+        nav {
+            background-color: #333;
+            padding: 1rem;
+            position: sticky;
+            top: 0;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.3s;
+        }
+
+        nav a:hover {
+            color: #667eea;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+
+        .hero {
+            text-align: center;
+            padding: 3rem 0;
+            margin-bottom: 3rem;
+        }
+
+        .hero h2 {
+            font-size: 2rem;
+            margin-bottom: 1rem;
+            color: #667eea;
+        }
+
+        .hero p {
+            font-size: 1.2rem;
+            color: #666;
+            margin-bottom: 2rem;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 0.8rem 2rem;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: 600;
+            transition: transform 0.3s;
+        }
+
+        .btn:hover {
+            transform: scale(1.05);
+        }
+
+        .features {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            margin: 3rem 0;
+        }
+
+        .feature-card {
+            background: #f8f9fa;
+            padding: 2rem;
+            border-radius: 8px;
+            text-align: center;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+            transition: transform 0.3s;
+        }
+
+        .feature-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .feature-card h3 {
+            color: #667eea;
+            margin-bottom: 1rem;
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 2rem;
+            margin-top: 3rem;
+        }
+
+        footer p {
+            margin: 0.5rem 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>TechCrush</h1>
+        <p>Unleash Your Tech Potential</p>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#features">Features</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <section class="hero" id="home">
+            <h2>Welcome to TechCrush</h2>
+            <p>Discover the latest in technology, innovations, and digital solutions</p>
+            <a href="#features" class="btn">Explore More</a>
+        </section>
+
+        <section id="features">
+            <h2 style="text-align: center; margin-bottom: 2rem; color: #333;">Our Features</h2>
+            <div class="features">
+                <div class="feature-card">
+                    <h3>💻 Latest Tech News</h3>
+                    <p>Stay updated with the most recent technology trends and breakthroughs in the digital world.</p>
+                </div>
+                <div class="feature-card">
+                    <h3>🚀 Innovation Hub</h3>
+                    <p>Explore cutting-edge solutions and innovative approaches to modern tech challenges.</p>
+                </div>
+                <div class="feature-card">
+                    <h3>🎓 Learning Resources</h3>
+                    <p>Access comprehensive guides and tutorials to enhance your tech skills and knowledge.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="about" style="margin-top: 3rem; padding: 2rem; background: #f8f9fa; border-radius: 8px;">
+            <h2 style="margin-bottom: 1rem; color: #333;">About TechCrush</h2>
+            <p>TechCrush is your ultimate destination for everything technology. We are dedicated to bringing you the latest news, insights, and resources to keep you ahead in the tech world. Whether you're a developer, entrepreneur, or tech enthusiast, we have something for everyone.</p>
+        </section>
+    </div>
+
+    <footer id="contact">
+        <h3>Get In Touch</h3>
+        <p>Email: info@techcrush.com</p>
+        <p>Phone: +1 (555) 123-4567</p>
+        <p>&copy; 2026 TechCrush. All rights reserved.</p>
+    </footer>
+</body>
+</html>
